@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab4.OperationsWindow">
+   <children>
+      <Label text="Пошук найкоротшого шляху через метод топологічного сортування">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <HBox spacing="5.0">
+         <children>
+            <Label fx:id="startingValueLabel1" layoutX="10.0" layoutY="10.0" text="Початкова вершина:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="startVertexLabel" maxWidth="50.0" promptText="номер" />
+            <Label fx:id="startingValueLabel" text="Кінцева вершина:">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="finishVertexLabel" maxWidth="50.0" promptText="номер" />
+            <Button mnemonicParsing="false" onAction="#generatePath" text="Regenerate" />
+            <Button layoutX="396.0" layoutY="10.0" mnemonicParsing="false" onAction="#clearPath" text="Clear" />
+         </children>
+      </HBox>
+      <Canvas fx:id="canvas" height="500.0" width="500.0" />
+      <Label fx:id="resultLabel" text="#Result" textFill="#e80000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+   </padding>
+</VBox>

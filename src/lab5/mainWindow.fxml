@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab5.MainWindow">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Main menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#processInputWindow" text="Graph input" />
+                  <MenuItem mnemonicParsing="false" onAction="#processOperationsWindow" text="Operations" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label fx:id="infoLabel" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin></Label>
+   </bottom>
+   <center>
+      <VBox alignment="TOP_CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Національний технічний університет України &quot;Київський політехнічний інститут&quot;&#10;Кафедра обчислювальної техніки&#10;&quot;Дискретна математика&quot;" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label text="Лабораторна робота №5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label text="Тема: &quot;Розфарбування графа. Алгоритми розфарбування&quot;;&#10;Мета: Вивчення способів правильного розфарбування графа;&#10;Завдання: Створити програму для правильного розфарбування графа на основі&#10;одного з алгоритмів розфарбування.">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Введіть номер залікової книжки:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="numberText">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#setInfoLabel" text="Calculate" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

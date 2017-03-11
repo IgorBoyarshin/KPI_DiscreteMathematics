@@ -1,0 +1,8 @@
+.mainWindow #label-title-top {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-alignment: center;
+}
+.mainWindow #label-title-lab {
+    -fx-font-size: 14px;
+}

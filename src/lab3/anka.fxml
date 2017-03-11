@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.image.Image?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+             <ImageView
+                     fx:id="imageView"
+                     fitHeight="150.0"
+                     fitWidth="200.0"
+                     layoutX="61.0"
+                     layoutY="83.0"
+                     pickOnBounds="true"
+                     preserveRatio="true"
+             >
+                 <image>
+                     <Image
+                             url="src/Box13.jpg"
+                             backgroundLoading="true"
+                     />
+                 </image>
+             </ImageView>
+            <VBox>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Anka" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Anka2" />
+                        <TextField />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

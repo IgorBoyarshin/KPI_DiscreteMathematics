@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab3.OperationsWindow">
+   <children>
+      <Label text="Генерація двійкових векторів довжини n у антилексикографічному порядку">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <HBox>
+         <children>
+            <Label fx:id="nAndMValueLabel" text="#Значення N та M">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox spacing="5.0">
+         <children>
+            <Label text="Початковий вектор:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="startingValueLabel" style="-fx-text-fill: #1111DD;" text="#value">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#regenerateStartingValue" text="Regenerate" />
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Label text="Лексикографічний порядок">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="listViewLexi" maxWidth="250.0" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER">
+               <children>
+                  <Label text="Антилексикографічний порядок">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="listViewAntiLexi" maxWidth="250.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+   </padding>
+</VBox>
